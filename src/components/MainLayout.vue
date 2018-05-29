@@ -46,12 +46,14 @@
                     Online
                 </div>
             </div>
-            <form action="#">
-                <input type="text" placeholder="Search">
-                <button type="submit">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
-                </button>
-            </form>
+            <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
+                        <svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
+                    </button>
+                </form>
+            </div>
             <ul>
                 <li class="main-navigation">Main Navigation</li>
                 <li><a class="left-sidebar" href="#"><svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z"/></svg>
@@ -116,6 +118,27 @@
 </script>
 
 <style>
+    /*.search-container {*/
+        /*float: right;*/
+    /*}*/
+
+    .search-container input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        border: none;
+        background: #666;
+        color: white;
+    }
+
+    .search-container button {
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #666;
+        border: none;
+        cursor: pointer;
+    }
+
     .left_sidebar ul {
         margin: 0;
         background-color: #2d3c42;
