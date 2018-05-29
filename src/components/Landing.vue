@@ -13,10 +13,14 @@
         </a></li>
       </ul>
     </nav>
-    <div class="main flex flex-column align-center">
-<h2>AdminLTE Replica</h2>
+    <div class="main">
+      <h1>AdminLTE Replica</h1>
+      <p>Una rèplica de la plantilla <b><a href="https://adminlte.io/">AdminLTE</a></b></p>
+      <img src="https://adminlte.io/img/AdminLTE2.1.png" alt="Pagina principal plantilla AdminLTE">
     </div>
-  </div>
+    <footer>
+      <span>Created with love <span class="cor">&hearts;</span> by <b><a href="https://github.com/eric98">Eric Garcia</a></b></span>
+    </footer>  </div>
 </template>
 
 <script>
@@ -28,8 +32,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
+  .cor{
+    color: red;
+  }
+
+  footer {
+    background-color: #31708F;
+    color: white;
+    padding: 1em;
+  }
+
   .main {
-    height: 729px;
+    padding-bottom: 1em;
     background: url(https://i.pinimg.com/originals/be/f4/84/bef484c1c2679790df69058bcd570d53.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,9 +52,11 @@ export default {
     color: white;
   }
 
-  .flex { display: flex; }
-  .flex-column { flex-direction: column; }
-  .align-center { align-items: center; }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .header-nav {
     background-color: #31708F;
@@ -55,6 +71,7 @@ export default {
   a {
     text-decoration: none;
     padding-right: 10px;
+    color: white;
   }
 
   body {
