@@ -5,26 +5,26 @@
         </header>
 
         <nav class="header-nav">
-            <a href="">
+            <a class="nav-sidebar" href="">
                 <svg @click="toogleSideBar" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </a>
             <ul>
                 <li>
-                    <a href="#Emails">
+                    <a class="nav-sidebar" href="#Emails">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 8a6 6 0 0 1 4.03-5.67 2 2 0 1 1 3.95 0A6 6 0 0 1 16 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 1 1-4 0h4z"/></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="#Notification">Notifications</a>
+                    <a class="nav-sidebar" href="#Notification">Notifications</a>
                 </li>
                 <li>
-                    <a href="#Tasks">Tasks</a>
+                    <a class="nav-sidebar" href="#Tasks">Tasks</a>
                 </li>
                 <li>
-                    <a href="#Profile"><img class="avatar" src="https://ca.gravatar.com/userimage/138732031/38f84b5befe225f1610da8955bc0548f.jpeg" alt="Eric Garcia Reverter">Eric Garcia Reverter</a>
+                    <a class="nav-sidebar" href="#Profile"><img class="avatar" src="https://ca.gravatar.com/userimage/138732031/38f84b5befe225f1610da8955bc0548f.jpeg" alt="Eric Garcia Reverter">Eric Garcia Reverter</a>
                 </li>
                 <li>
-                    <a href="#Preferences">Preferences</a>
+                    <a class="nav-sidebar" href="#Preferences">Preferences</a>
                 </li>
             </ul>
         </nav>
@@ -46,7 +46,7 @@
                     Online
                 </div>
             </div>
-            <form action="">
+            <form action="#">
                 <input type="text" placeholder="Search">
                 <button type="submit">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
@@ -54,32 +54,43 @@
             </form>
             <ul>
                 <li class="main-navigation">Main Navigation</li>
-                <li><a href="#dashboard"><svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z"/></svg>
+                <li><a class="left-sidebar" href="#"><svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z"/></svg>
                      Dashboard</a></li>
                 <router-link tag="li" to="/landing">
-                    <a href="/landing">
+                    <a class="left-sidebar" href="/landing">
                         <svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
                         Landing page
                     </a>
                 </router-link>
                 <router-link tag="li" to="/login">
-                    <a href="/login">
+                    <a class="left-sidebar" href="/login">
                         <svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
                         Login
                     </a>
                 </router-link>
                 <router-link tag="li" to="/cards">
-                    <a href="/cards">
+                    <a class="left-sidebar" href="/cards">
                         <svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
                         Cards
                     </a>
                 </router-link>
                 <router-link tag="li" to="/dropdown">
-                    <a href="/dropdown">
+                    <a class="left-sidebar" href="/dropdown">
                         <svg class="icon-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7.03 2.6a3 3 0 0 1 5.94 0L15 3v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1V3l2.03-.4zM5 6H4v12h12V6h-1v1H5V6zm5-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
                         Dropdown
                     </a>
                 </router-link>
+                <li class="main-navigation">Labels</li>
+                <li><a class="left-sidebar" href="#"><svg class="icon-sidebar-red" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="75" />
+                </svg> Important</a></li>
+                <li><a class="left-sidebar" href="#"><svg class="icon-sidebar-yellow" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="75" />
+                </svg> Warning</a></li>
+                <li><a class="left-sidebar" href="#"><svg class="icon-sidebar-blue" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="75" />
+                </svg> Information</a></li>
+                <li class="premium-navigation"><a class="premium-navigation-link" href="#">Premium Templates</a></li>
             </ul>
         </aside>
         <aside class="rigth_sidebar">Rigth Sidebar</aside>
@@ -121,18 +132,36 @@
         cursor: auto;
     }
 
+    .premium-navigation:hover{
+        background: rgb(0, 111, 55);
+    }
+
+    .premium-navigation {
+        color: white;
+        background: rgb(0, 166, 90);
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 12px 15px;
+        cursor: auto;
+    }
+
     ul{
         padding: 0;
     }
 
-    .left_sidebar ul li a {
-        /*border: 1px solid black;*/
+    .left-sidebar {
         background-color: #2d3c42;
         display: block;
         padding: 12px 15px;
     }
 
-    .left_sidebar ul li a:hover{
+    .premium-navigation-link {
+        color: white;
+        text-decoration:none;
+        padding: 12px 15px;
+    }
+
+    .left_sidebar ul li a.left-sidebar:hover{
         background-color: #4b646f;
     }
 
@@ -146,7 +175,6 @@
 
     .header-nav>a {
         padding: 0.5rem;
-        /*margin-right: auto; !** PULL-LEFT **!*/
         height: 100%;
         display: flex;
         align-self: center;
@@ -198,6 +226,24 @@
         fill: currentColor;
     }
 
+    .icon-sidebar-red {
+        height: 1em;
+        width: 1em;
+        fill: red;
+    }
+
+    .icon-sidebar-yellow {
+        height: 1em;
+        width: 1em;
+        fill: yellow;
+    }
+
+    .icon-sidebar-blue {
+        height: 1em;
+        width: 1em;
+        fill: blue;
+    }
+
     html, body, .container {
         margin: 0;
         height: 100%;
@@ -211,7 +257,12 @@
         color: #333;
     }
 
-    a {
+    .left-sidebar {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .nav-sidebar {
         text-decoration: none;
         color: inherit;
     }
