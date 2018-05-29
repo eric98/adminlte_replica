@@ -118,9 +118,6 @@
 </script>
 
 <style>
-    /*.search-container {*/
-        /*float: right;*/
-    /*}*/
 
     .search-container input[type=text] {
         padding: 6px;
