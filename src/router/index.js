@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import Dropdown from '@/components/Dropdown'
 import Cards from '@/components/Cards'
 import Login from '@/components/Login'
 import Landing from '@/components/Landing'
@@ -24,6 +25,11 @@ export default new Router({
       path: '/',
       component: MainLayout,
       children: [
+        {
+          path: '/dropdown',
+          name: 'Dropdown',
+          component: Dropdown
+        },
         {
           path: '/cards',
           name: 'Cards',
