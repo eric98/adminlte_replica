@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import Cards from '@/components/Cards'
 import Login from '@/components/Login'
 import Landing from '@/components/Landing'
 import MainLayout from '@/components/MainLayout'
@@ -23,6 +24,11 @@ export default new Router({
       path: '/',
       component: MainLayout,
       children: [
+        {
+          path: '/cards',
+          name: 'Cards',
+          component: Cards
+        },
         {
           path: '/',
           name: 'HelloWorld',

@@ -1,26 +1,29 @@
 <template>
-  <div class="container">
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#/landing">
-          Home
-        </a></li>
-        <li><a href="#/login">
-          Login
-        </a></li>
-        <li><a href="#/">
-          MainLayout
-        </a></li>
-      </ul>
-    </nav>
-    <div class="main">
-      <h1>AdminLTE Replica</h1>
-      <p>Una rèplica de la plantilla <b><a href="https://adminlte.io/">AdminLTE</a></b></p>
-      <img src="https://adminlte.io/img/AdminLTE2.1.png" alt="Pagina principal plantilla AdminLTE">
+  <body class="landing-body">
+    <div class="container">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#/landing">
+            Home
+          </a></li>
+          <li><a href="#/login">
+            Login
+          </a></li>
+          <li><a href="#/">
+            MainLayout
+          </a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>AdminLTE Replica</h1>
+        <p>Una rèplica de la plantilla <b><a href="https://adminlte.io/">AdminLTE</a></b></p>
+        <img src="https://adminlte.io/img/AdminLTE2.1.png" alt="Pagina principal plantilla AdminLTE">
+      </div>
+      <footer>
+        <span>Created with love <span class="cor">&hearts;</span> by <b><a href="https://github.com/eric98">Eric Garcia</a></b></span>
+      </footer>
     </div>
-    <footer>
-      <span>Created with love <span class="cor">&hearts;</span> by <b><a href="https://github.com/eric98">Eric Garcia</a></b></span>
-    </footer>  </div>
+  </body>
 </template>
 
 <script>
@@ -30,7 +33,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
+
+  .landing-body {
+    background-color: #d2d6de;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  }
 
   .cor{
     color: red;
